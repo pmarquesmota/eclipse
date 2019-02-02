@@ -1,0 +1,14 @@
+package pt.marquesmota.Paul;
+
+import java.util.Scanner;
+
+public class Paul {
+
+	public static void main(String[] args) {
+		System.out.println("Veuillez saisir un nombre : ");
+		Scanner sc = new Scanner(System.in);
+		int str = sc.nextInt();
+		System.out.println("Le nombre saisi est : "+str);
+	}
+
+}

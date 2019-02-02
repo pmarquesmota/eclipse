@@ -1,0 +1,8 @@
+package pt.marquesmota.Paul;
+import javax.swing.JFrame;
+ 
+public class Paul {
+  public static void main(String[] args){
+	  Fenetre f = new Fenetre();
+  }       
+}

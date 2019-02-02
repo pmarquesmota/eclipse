@@ -1,0 +1,24 @@
+package pt.marquesmota.Paul;
+
+import java.util.Scanner;
+
+public class Paul {
+
+	public static void main(String[] args) {
+		int i = 1;
+		if (i < 0)
+		{
+		  System.out.println("Ce nombre est négatif !");
+		} 
+		else
+		{
+		  if(i == 0)
+		    System.out.println("Ce nombre est nul !");
+		 
+		  else
+		    System.out.println("Ce nombre est positif !");
+		 
+		}
+	}
+
+}

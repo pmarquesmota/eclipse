@@ -1,0 +1,7 @@
+package pt.marquesmota.Paul;
+
+import javax.swing.JPanel;
+
+public class Fenetre extends JPanel {
+
+}

@@ -1,0 +1,38 @@
+package pt.marquesmota.Paul;
+
+import java.util.Scanner;
+
+public class Paul {
+
+	public static void main(String[] args) {
+		String reponse = new String();
+		int conversion;
+		Scanner sc = new Scanner(System.in);
+
+		do {
+			do {
+				System.out.println("Convertisseur de degrés Celsius et Farenheit");
+				System.out.println("--------------------------------------------");
+				System.out.println("Choisissez le mode de conversion :");
+				System.out.println("1 : Convertisseur Celsius - Farenheit");
+				System.out.println("2 : Convertisseur Farenheit - Celsius");
+
+				conversion = sc.nextInt();
+			} while (conversion == 1 || conversion == 2);
+
+			System.out.println("Température à convertir : ");
+			float temperature = sc.nextFloat();
+
+			if (temperature == 1) {
+				float farenheit = (9 / 5) * temperature + 32;
+				System.out.println(temperature + "°C correspond à : " + farenheit + "°F");
+			} else {
+				float celsius = (temperature - 32) * 5 / 9;
+				System.out.println(temperature + "°F correspond à : " + celsius + "°C");
+			}
+
+			System.out.println("Souhaitez-vous convertir une autre température ? (O/N)");
+			reponse = sc.nextLine();
+		} while (reponse.charAt(0) != 'O');
+	}
+}
